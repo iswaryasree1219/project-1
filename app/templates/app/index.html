@@ -1,0 +1,10 @@
+<body>
+    <h2>JobApp Home Page</h2>   
+    <ul>
+        {% for job in jobs %}
+        <li>
+            <a href="{% url 'jobs_detail' job.slug%}"><h1>{{job}}</h1></a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
